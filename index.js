@@ -53,7 +53,6 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  console.log(data);
   if (!data) {
     quizContainer.innerHTML = "";
     return;
@@ -65,7 +64,7 @@ const displayQuiz = (data) => {
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
       ${i + 1}
     </div>
-    <p class="text-gray-800 text-sm">${quiz.quetion}</p>
+    <p class="text-gray-800 text-sm">${quiz.question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
@@ -137,6 +136,7 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
+    console.log(answers);
     showAnswers(answers);
     displayResult.innerHTML = `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
