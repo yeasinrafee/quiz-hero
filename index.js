@@ -184,3 +184,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+//Moving to blog page:
+document.getElementById('btn-blog').addEventListener('click', function(){
+  window.location.href = "./blog.html";
+})
