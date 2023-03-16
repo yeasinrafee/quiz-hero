@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q&A</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
 </head>
 <body>
-    <h1>Questions and Answers</h1>
+    <h1 class="px-20 py-10 text-4xl font-bold bg-sky-300">Questions and Answers</h1>
+
+    <section class="px-20 py-6 ml-12">
+        <h2 class="text-3xl mb-3 font-semibold">What is the difference between map, filter, forEach and find method?</h2>
+        <p class="text-xl mb-9">Answer: Map array method loop through an array and return a new array. <br> Filter array method creates a copy of the array and return the values which pass by the given conditon.<br> forEach array method just loop through the given array and dosen't return any value. <br> Find array method only return the first element which pass the condition, if there is no value then it returns undefined.</p>
+        <h2 class="text-3xl mb-3 font-semibold">What is the difference between localStorage, seassionStorage and cookies?</h2>
+        <p class="text-xl mb-9">Answer: </p>
+        <h2 class="text-3xl mb-3 font-semibold">What is eventLoop, how it works?</h2>
+        <p class="text-xl mb-9">Answer: </p>
+        <h2 class="text-3xl mb-3 font-semibold">How quizTimer and chooseQuiz function working?</h2>
+        <p class="text-xl">Answer: </p>
+    </section>
 </body>
 </html>
