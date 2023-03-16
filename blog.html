@@ -26,12 +26,12 @@
     <section class="px-20 py-6 ml-12">
         <h2 class="text-3xl mb-3 font-semibold">What is the difference between map, filter, forEach and find method?</h2>
         <p class="text-xl mb-9">Answer: Map array method loop through an array and return a new array. <br> Filter array method creates a copy of the array and return the values which pass by the given conditon.<br> forEach array method just loop through the given array and dosen't return any value. <br> Find array method only return the first element which pass the condition, if there is no value then it returns undefined.</p>
-        <h2 class="text-3xl mb-3 font-semibold">What is the difference between localStorage, seassionStorage and cookies?</h2>
-        <p class="text-xl mb-9">Answer: </p>
+        <h2 class="text-3xl mb-3 font-semibold">What is the difference between localStorage, sessionStorage and cookies?</h2>
+        <p class="text-xl mb-9">Answer: In browser localStorage we can store our data in our browser. It'll be stored there untill we delete or remove them manually. <br> In the seassionStorage we can also store our data but if we close the browser then the data will be autometically cleared. <br> Cookies are small pieces of data, when we visit any website then they sent to our browser to help that website to remember that we have visited.</p>
         <h2 class="text-3xl mb-3 font-semibold">What is eventLoop, how it works?</h2>
-        <p class="text-xl mb-9">Answer: </p>
+        <p class="text-xl mb-9">Answer: The Event Loop maintain the call stack and the callback queue. When the call stack gets empty the the event loop will take the first event <br>from the queue and push that into the call stack and run it.</p>
         <h2 class="text-3xl mb-3 font-semibold">How quizTimer and chooseQuiz function working?</h2>
-        <p class="text-xl">Answer: </p>
+        <p class="text-xl">Answer: quizTimer is a function which take a parameter as dismiss, when dismiss is true then it clear the interval.<br>Then the timer which is a setInterval function of 1000 mili second or 1 second. As much I understand the function <br>is written for the quiz timer.<br><br>chooseQuiz function taking two parameter as index and givenAns. It is using find method on answer for finding the answer. <br>Then its checking some condition and also the is a loop running through the answers, at the end it is calling displayAnswers <br>function by the answers parameter.</p>
     </section>
 </body>
 </html>
